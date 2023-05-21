@@ -10,7 +10,7 @@ port (
 	switch0		: in std_logic;
 	switch1		: in std_logic;
 	switch2		: in std_logic;
-	led0			: out std_logic
+	led0		: out std_logic
 );
 end mux2x1;
 
@@ -27,7 +27,7 @@ begin
 temp1 	<= not (not switch0 and not switch2);
 temp2 	<= not ((switch2) and not switch1);
 led0	<= not (temp1 and temp2);
--- q1_o	<= not ((not (a_i and s1_i)) and (not ((not s1_i) and b_i)));
+
 
 --------------------------------------------
 -- CONCURRENT ASSIGNMENT COMBINATIONAL DESIGN
